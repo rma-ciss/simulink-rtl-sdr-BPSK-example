@@ -1,12 +1,12 @@
 Model {
-  Name			  "Rx_BPSK_delta_RTL_SDR_light"
+  Name			  "Rx_BPSK_delta_RTL_SDR"
   Version		  7.4
   MdlSubVersion		  0
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.259"
+    ComputedModelVersion    "1.260"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -23,11 +23,11 @@ Model {
   Creator		  "wnieves"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "Bscheers"
+  LastModifiedBy	  "bscheers"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Mar 14 09:38:06 2013"
-  RTWModifiedTimeStamp	  285154684
-  ModelVersionFormat	  "1.%<AutoIncrement:259>"
+  LastModifiedDate	  "Tue Dec 18 01:09:51 2007"
+  RTWModifiedTimeStamp	  119840941
+  ModelVersionFormat	  "1.%<AutoIncrement:260>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -527,6 +527,13 @@ Model {
 	  Version		  "1.6.0"
 	  Description		  "HDL Coder custom configuration component"
 	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    ""
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
 	}
 	PropName		"Components"
       }
@@ -804,7 +811,7 @@ Model {
     }
   }
   System {
-    Name		    "Rx_BPSK_delta_RTL_SDR_light"
+    Name		    "Rx_BPSK_delta_RTL_SDR"
     Location		    [140, 145, 1223, 595]
     Open		    on
     ModelBrowserVisibility  off
@@ -842,7 +849,7 @@ Model {
       MaskIconUnits	      "autoscale"
       System {
 	Name			"BPSK receiver + delta demod"
-	Location		[-28, 181, 1248, 608]
+	Location		[-38, 179, 1230, 606]
 	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -970,13 +977,13 @@ Model {
 	      SourceType	      "Digital Filter Design"
 	      ShowPortLabels	      "FromPortIcon"
 	      SystemSampleTime	      "-1"
-	      FunctionWithSeparateData off
+	      FunctionWithSeparateData "off"
 	      RTWMemSecFuncInitTerm   "Inherit from model"
 	      RTWMemSecFuncExecute    "Inherit from model"
 	      RTWMemSecDataConstants  "Inherit from model"
 	      RTWMemSecDataInternal   "Inherit from model"
 	      RTWMemSecDataParameters "Inherit from model"
-	      mwdsp_browser_bugfix_var off
+	      mwdsp_browser_bugfix_var "off"
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -1835,7 +1842,7 @@ Model {
 	      SourceType	      "Complex Phase Shift"
 	      ShowPortLabels	      "FromPortIcon"
 	      SystemSampleTime	      "-1"
-	      FunctionWithSeparateData off
+	      FunctionWithSeparateData "off"
 	      RTWMemSecFuncInitTerm   "Inherit from model"
 	      RTWMemSecFuncExecute    "Inherit from model"
 	      RTWMemSecDataConstants  "Inherit from model"
@@ -2466,7 +2473,7 @@ Model {
       Name		      "Constant"
       SID		      445
       Position		      [75, 125, 105, 155]
-      Value		      "433.904e6"
+      Value		      "433.92e6"
       OutDataType	      "fixdt(1, 16)"
       OutScaling	      "2^0"
     }
@@ -2516,16 +2523,16 @@ Model {
       SourceBlock	      "rtlsdr/rtlsdr_source"
       SourceType	      "rtl-sdr Source"
       rtlsdr_device_index     "0"
-      rtlsdr_query	      off
+      rtlsdr_query	      "off"
       rtlsdr_samplerate	      "1024e3"
       rtlsdr_frame_length     "2048*8"
       rtlsdr_frame_type	      "Frame"
       rtlsdr_frequency	      "100.6e6"
-      rtlsdr_frequency_tune   on
+      rtlsdr_frequency_tune   "on"
       rtlsdr_gain	      "19.1"
-      rtlsdr_gain_tune	      off
-      rtlsdr_agc_on	      on
-      rtlsdr_restore_block    off
+      rtlsdr_gain_tune	      "off"
+      rtlsdr_agc_on	      "on"
+      rtlsdr_restore_block    "off"
     }
     Line {
       Labels		      [0, 0]
@@ -2735,7 +2742,7 @@ MatData {
 }
 # Finite State Machines
 #
-#    Stateflow Version 7.1 (R2009a) dated Jul 17 2009, 09:16:34
+#    Stateflow Version 7.1 (R2009a) dated Jul 17 2009, 10:24:20
 #
 #
 
@@ -2743,7 +2750,7 @@ MatData {
 Stateflow {
   machine {
     id			    1
-    name		    "Rx_BPSK_delta_RTL_SDR_light"
+    name		    "Rx_BPSK_delta_RTL_SDR"
     created		    "17-Jan-2013 16:57:38"
     isLibrary		    0
     firstTarget		    2
