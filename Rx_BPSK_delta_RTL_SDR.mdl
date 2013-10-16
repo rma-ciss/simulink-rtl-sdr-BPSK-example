@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.260"
+    ComputedModelVersion    "1.262"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -23,11 +23,11 @@ Model {
   Creator		  "wnieves"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "bscheers"
+  LastModifiedBy	  "Bscheers"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Dec 18 01:09:51 2007"
-  RTWModifiedTimeStamp	  119840941
-  ModelVersionFormat	  "1.%<AutoIncrement:260>"
+  LastModifiedDate	  "Wed Oct 16 11:36:11 2013"
+  RTWModifiedTimeStamp	  303824086
+  ModelVersionFormat	  "1.%<AutoIncrement:262>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -527,13 +527,6 @@ Model {
 	  Version		  "1.6.0"
 	  Description		  "HDL Coder custom configuration component"
 	  Name			  "HDL Coder"
-	  Array {
-	    Type		    "Cell"
-	    Dimension		    1
-	    Cell		    ""
-	    PropName		    "HDLConfigFile"
-	  }
-	  HDLCActiveTab		  "0"
 	}
 	PropName		"Components"
       }
@@ -849,8 +842,8 @@ Model {
       MaskIconUnits	      "autoscale"
       System {
 	Name			"BPSK receiver + delta demod"
-	Location		[-38, 179, 1230, 606]
-	Open			off
+	Location		[-38, 179, 1222, 606]
+	Open			on
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -977,13 +970,13 @@ Model {
 	      SourceType	      "Digital Filter Design"
 	      ShowPortLabels	      "FromPortIcon"
 	      SystemSampleTime	      "-1"
-	      FunctionWithSeparateData "off"
+	      FunctionWithSeparateData off
 	      RTWMemSecFuncInitTerm   "Inherit from model"
 	      RTWMemSecFuncExecute    "Inherit from model"
 	      RTWMemSecDataConstants  "Inherit from model"
 	      RTWMemSecDataInternal   "Inherit from model"
 	      RTWMemSecDataParameters "Inherit from model"
-	      mwdsp_browser_bugfix_var "off"
+	      mwdsp_browser_bugfix_var off
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -1641,7 +1634,7 @@ Model {
 	  System {
 	    Name		    "Freq Offset correction 4"
 	    Location		    [105, 220, 1210, 662]
-	    Open		    off
+	    Open		    on
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -1842,7 +1835,7 @@ Model {
 	      SourceType	      "Complex Phase Shift"
 	      ShowPortLabels	      "FromPortIcon"
 	      SystemSampleTime	      "-1"
-	      FunctionWithSeparateData "off"
+	      FunctionWithSeparateData off
 	      RTWMemSecFuncInitTerm   "Inherit from model"
 	      RTWMemSecFuncExecute    "Inherit from model"
 	      RTWMemSecDataConstants  "Inherit from model"
@@ -1899,7 +1892,7 @@ Model {
 	      System {
 		Name			"Loop Filter"
 		Location		[236, 137, 1085, 670]
-		Open			off
+		Open			on
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -1951,7 +1944,7 @@ Model {
 		  Name			  "C1"
 		  SID			  554
 		  Position		  [160, 175, 190, 205]
-		  Value			  "0.0164"
+		  Value			  "0.359910"
 		  OutDataTypeMode	  "single"
 		  OutDataType		  "fixdt(1, 16)"
 		  OutScaling		  "2^0"
@@ -1962,7 +1955,7 @@ Model {
 		  Name			  "C2"
 		  SID			  555
 		  Position		  [135, 65, 165, 95]
-		  Value			  "1.3866e-4"
+		  Value			  "0.080979755"
 		  OutDataTypeMode	  "single"
 		  OutDataType		  "fixdt(1, 16)"
 		  OutScaling		  "2^0"
@@ -2523,16 +2516,16 @@ Model {
       SourceBlock	      "rtlsdr/rtlsdr_source"
       SourceType	      "rtl-sdr Source"
       rtlsdr_device_index     "0"
-      rtlsdr_query	      "off"
+      rtlsdr_query	      off
       rtlsdr_samplerate	      "1024e3"
       rtlsdr_frame_length     "2048*8"
       rtlsdr_frame_type	      "Frame"
       rtlsdr_frequency	      "100.6e6"
-      rtlsdr_frequency_tune   "on"
+      rtlsdr_frequency_tune   on
       rtlsdr_gain	      "19.1"
-      rtlsdr_gain_tune	      "off"
-      rtlsdr_agc_on	      "on"
-      rtlsdr_restore_block    "off"
+      rtlsdr_gain_tune	      off
+      rtlsdr_agc_on	      on
+      rtlsdr_restore_block    off
     }
     Line {
       Labels		      [0, 0]
@@ -2573,8 +2566,8 @@ Model {
       Position		      [440, 84]
     }
     Annotation {
-      Name		      "Fs=1024kSps"
-      Position		      [214, 89]
+      Name		      "Fs=1024kSps (Min Fs for RTL !!)"
+      Position		      [224, 89]
     }
   }
 }
@@ -2742,7 +2735,7 @@ MatData {
 }
 # Finite State Machines
 #
-#    Stateflow Version 7.1 (R2009a) dated Jul 17 2009, 10:24:20
+#    Stateflow Version 7.1 (R2009a) dated Jul 17 2009, 09:16:34
 #
 #
 

@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.285"
+    ComputedModelVersion    "1.286"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -23,11 +23,11 @@ Model {
   Creator		  "wnieves"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "bscheers"
+  LastModifiedBy	  "Bscheers"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Dec 18 01:20:56 2007"
-  RTWModifiedTimeStamp	  119841650
-  ModelVersionFormat	  "1.%<AutoIncrement:285>"
+  LastModifiedDate	  "Wed Oct 16 11:37:49 2013"
+  RTWModifiedTimeStamp	  303824266
+  ModelVersionFormat	  "1.%<AutoIncrement:286>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -527,13 +527,6 @@ Model {
 	  Version		  "1.6.0"
 	  Description		  "HDL Coder custom configuration component"
 	  Name			  "HDL Coder"
-	  Array {
-	    Type		    "Cell"
-	    Dimension		    1
-	    Cell		    ""
-	    PropName		    "HDLConfigFile"
-	  }
-	  HDLCActiveTab		  "0"
 	}
 	PropName		"Components"
       }
@@ -959,13 +952,13 @@ Model {
 	      SourceType	      "Digital Filter Design"
 	      ShowPortLabels	      "FromPortIcon"
 	      SystemSampleTime	      "-1"
-	      FunctionWithSeparateData off
+	      FunctionWithSeparateData "off"
 	      RTWMemSecFuncInitTerm   "Inherit from model"
 	      RTWMemSecFuncExecute    "Inherit from model"
 	      RTWMemSecDataConstants  "Inherit from model"
 	      RTWMemSecDataInternal   "Inherit from model"
 	      RTWMemSecDataParameters "Inherit from model"
-	      mwdsp_browser_bugfix_var off
+	      mwdsp_browser_bugfix_var "off"
 	    }
 	    Block {
 	      BlockType		      Reference
@@ -980,13 +973,13 @@ Model {
 	      SourceType	      "Digital Filter Design"
 	      ShowPortLabels	      "FromPortIcon"
 	      SystemSampleTime	      "-1"
-	      FunctionWithSeparateData off
+	      FunctionWithSeparateData "off"
 	      RTWMemSecFuncInitTerm   "Inherit from model"
 	      RTWMemSecFuncExecute    "Inherit from model"
 	      RTWMemSecDataConstants  "Inherit from model"
 	      RTWMemSecDataInternal   "Inherit from model"
 	      RTWMemSecDataParameters "Inherit from model"
-	      mwdsp_browser_bugfix_var off
+	      mwdsp_browser_bugfix_var "off"
 	    }
 	    Block {
 	      BlockType		      Signum
@@ -1178,7 +1171,7 @@ Model {
 	  numChannels		  "1"
 	  sampleRate		  "16000"
 	  deviceDatatype	  "Determine from output data type"
-	  autoBufferSize	  on
+	  autoBufferSize	  "on"
 	  bufferSize		  "4096"
 	  queueDuration		  "1.0"
 	  frameSize		  "256"
@@ -1224,7 +1217,7 @@ Model {
 	  SourceType		  "Raised Cosine Transmit Filter"
 	  ShowPortLabels	  "FromPortIcon"
 	  SystemSampleTime	  "-1"
-	  FunctionWithSeparateData off
+	  FunctionWithSeparateData "off"
 	  RTWMemSecFuncInitTerm	  "Inherit from model"
 	  RTWMemSecFuncExecute	  "Inherit from model"
 	  RTWMemSecDataConstants  "Inherit from model"
@@ -1239,11 +1232,11 @@ Model {
 	  N			  "16"
 	  checkGain		  "Normalized"
 	  filterGain		  "1"
-	  checkCoeff		  off
+	  checkCoeff		  "off"
 	  variableName		  "rcTxFilt"
-	  launchFVT		  off
+	  launchFVT		  "off"
 	  roundingMode		  "Floor"
-	  overflowMode		  off
+	  overflowMode		  "off"
 	  coeffMode		  "Same word length as input"
 	  coeffWordLength	  "16"
 	  coeffFracLength	  "15"
@@ -1256,7 +1249,7 @@ Model {
 	  outputMode		  "Same as accumulator"
 	  outputWordLength	  "16"
 	  outputFracLength	  "15"
-	  LockScale		  off
+	  LockScale		  "off"
 	}
 	Block {
 	  BlockType		  Reference
@@ -1278,7 +1271,7 @@ Model {
 	  VarVal		  "1"
 	  RepMode		  "Not repeatable"
 	  rawSeed		  "1"
-	  IsInherit		  off
+	  IsInherit		  "off"
 	  SampMode		  "Discrete"
 	  SampTime		  "1/16000"
 	  SampFrame		  "256"
@@ -1311,8 +1304,8 @@ Model {
 	  TableSize		  "Speed"
 	  SampleTime		  "1/16000"
 	  SamplesPerFrame	  "256"
-	  additionalParams	  off
-	  allowOverrides	  on
+	  additionalParams	  "off"
+	  allowOverrides	  "on"
 	  dataType		  "double"
 	  wordLen		  "16"
 	  udDataType		  "sfix(16)"
@@ -1503,7 +1496,7 @@ Model {
 	  SourceType		  "AWGN Channel"
 	  ShowPortLabels	  "FromPortIcon"
 	  SystemSampleTime	  "-1"
-	  FunctionWithSeparateData off
+	  FunctionWithSeparateData "off"
 	  RTWMemSecFuncInitTerm	  "Inherit from model"
 	  RTWMemSecFuncExecute	  "Inherit from model"
 	  RTWMemSecDataConstants  "Inherit from model"
@@ -1571,7 +1564,7 @@ Model {
 	  SourceType		  "Complex Phase Shift"
 	  ShowPortLabels	  "FromPortIcon"
 	  SystemSampleTime	  "-1"
-	  FunctionWithSeparateData off
+	  FunctionWithSeparateData "off"
 	  RTWMemSecFuncInitTerm	  "Inherit from model"
 	  RTWMemSecFuncExecute	  "Inherit from model"
 	  RTWMemSecDataConstants  "Inherit from model"
@@ -1776,7 +1769,7 @@ Model {
       System {
 	Name			"Subsystem1"
 	Location		[-57, 190, 1201, 591]
-	Open			off
+	Open			on
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -2379,13 +2372,13 @@ Model {
 	      SourceType	      "Digital Filter Design"
 	      ShowPortLabels	      "FromPortIcon"
 	      SystemSampleTime	      "-1"
-	      FunctionWithSeparateData off
+	      FunctionWithSeparateData "off"
 	      RTWMemSecFuncInitTerm   "Inherit from model"
 	      RTWMemSecFuncExecute    "Inherit from model"
 	      RTWMemSecDataConstants  "Inherit from model"
 	      RTWMemSecDataInternal   "Inherit from model"
 	      RTWMemSecDataParameters "Inherit from model"
-	      mwdsp_browser_bugfix_var off
+	      mwdsp_browser_bugfix_var "off"
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -2529,7 +2522,7 @@ Model {
 	  System {
 	    Name		    "Fine Freq and Phase\n correction "
 	    Location		    [105, 220, 1210, 662]
-	    Open		    off
+	    Open		    on
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -2787,7 +2780,7 @@ Model {
 	      System {
 		Name			"Loop Filter"
 		Location		[236, 137, 1085, 670]
-		Open			off
+		Open			on
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -2839,7 +2832,7 @@ Model {
 		  Name			  "C1"
 		  SID			  629
 		  Position		  [160, 175, 190, 205]
-		  Value			  "0.0794"
+		  Value			  "0.359910"
 		  OutDataTypeMode	  "single"
 		  OutDataType		  "fixdt(1, 16)"
 		  OutScaling		  "2^0"
@@ -2849,8 +2842,8 @@ Model {
 		  BlockType		  Constant
 		  Name			  "C2"
 		  SID			  630
-		  Position		  [135, 65, 165, 95]
-		  Value			  "0.0034"
+		  Position		  [130, 65, 160, 95]
+		  Value			  "0.080979755"
 		  OutDataTypeMode	  "single"
 		  OutDataType		  "fixdt(1, 16)"
 		  OutScaling		  "2^0"
@@ -2966,7 +2959,7 @@ Model {
 		Line {
 		  SrcBlock		  "C2"
 		  SrcPort		  1
-		  Points		  [15, 0; 0, 20]
+		  Points		  [20, 0; 0, 20]
 		  DstBlock		  "Product"
 		  DstPort		  1
 		}
@@ -3826,7 +3819,7 @@ MatData {
 }
 # Finite State Machines
 #
-#    Stateflow Version 7.1 (R2009a) dated Jul 17 2009, 10:24:20
+#    Stateflow Version 7.1 (R2009a) dated Jul 17 2009, 09:16:34
 #
 #
 
